@@ -1,0 +1,49 @@
+<<Sitsanok Young>>
+HW2
+Written Questions
+
+Q1. No need for separate written questions. Your code should just run
+
+Q2. No need for separate written questions. Your code should just run
+
+Q3.1 [8 pts.] Identify the base case for S() and the recursive case for S(n)
+		
+	Base case: S(1) = 2
+	Recursive case: S(N) = 1 + S(N/2) + N/2
+
+Q3.2 [12 pts.] Derive an exact solution for S(N) when N is a power of 2. Be sure to show your work.
+
+	S(N) = 1 + S(N/2) + N/2
+	S(N/2) = 1 + S(N/4) + N/4
+	S(N/4) = 1 + S(N/8) + N/8
+	
+	S(N) = 1 + S(N/2) + N/2
+	S(N) = 1 + 1 + S(N/4) + N/4 + N/2
+	S(N) = 1 + 1 + 1 + S(N/8) + N/8 + N/4 + N/2
+	S(N) = 3 + S(N/2^3) + N*(((2^3)-1)/ 2^3)
+	S(N) = k + S(N/2^k) + N*(((2^k)-1)/ 2^k)
+	S(N) = n + S(N/2^n) + N*(((2^n)-1)/ 2^n)
+	
+	We know that N = 2^n and n = log_2(N)
+	
+	S(N) = log_2(N) + S(N/N) + N((N-1)/N)
+	S(N) = log_2(N) + S(1) + N - 1
+	S(N) = log_2(N) + 2 + N - 1
+	S(N) = log_2(N) + N + 1
+
+<< if you think this would be better done with a word document with equations, be sure to include that  >>
+<< with your submission.                                                                                >>
+
+Q4. No need for written question since your code should just run. 
+
+
+BONUS QUESTIONS
+
+3.3 [1 pt.] Can you derive a formula that predices the Value printed proc(a, 0, a.length-1) when a contains the 
+            integers from 0 to n-1 and N is a power of 2.
+    
+4.2 [1 pt.] Derive formula for T(n+1,k) in terms of T(n,k) and n and k?    
+            
+4.3 [1 pt.] Derive formula that computes T(n,2) for any n >= 2
+
+4.4 [1 pt.] Find twin pairs in the right diagonal, as well as the first ten n-1 instances

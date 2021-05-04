@@ -1,0 +1,39 @@
+<<Sitsanok Young>>
+HW1
+Written Questions
+
+Q1. Stack Experiments
+
+	1.1 The output is 2.6666666666666665. The ops stack is ["*"]. The vals stack is ["9"].
+	1.2 The output is 7.0. The ops stack is ["-"]. The vals stack is [].
+	1.3 The output is 99.0. The ops stack is ["-"]. The vals stack is [].
+	1.4 The output is 4.0. The ops stack is ["+","+","*"]. The vals stack is ["8","3","6"]
+	1.5 The output is 1.282442748091603. The ops stack is []. The vals stack is [].
+	1.7 The output is 2.0. The ops stack is []. The vals stack is [].
+		First, the Evaluate class computes 8 / 5 since it reached a ")".
+		Next, it hits another ")" and computes the closest integer to the quotient of 8 / 5.
+		Since 8 / 5 is 1.6, the closest integer to it is 2.0.
+
+Q3.1 Function f(n) that models # of array inspections for UnknownArraySolution
+
+Q3.2 Function g(n) that models # of array inspections for ImprovedUnknownArraySolution 
+
+Bonus Questions
+---------------
+Q1.8  I completed this.
+
+Q2.1.1 I completed this.
+
+Q2.2.1 I completed this.
+
+Q2.3.1 I completed this.
+
+Q2.3.2 Given an nxn NestedArray, A[n-(floor(((n-(n % 3))/3)+1)), floor(n-1)/3] is the cell with the largest value.
+					
+		An alternative solution could be this for better readability:
+								A[ceiling(2(n-1)/3), floor(n-1)/3] is the cell with the largest value.
+									If n % 3 = 0
+									subtract 1 from the value of r
+										
+Q4.3  The value to which the ratio converges to is 1.6.
+

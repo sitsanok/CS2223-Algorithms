@@ -1,0 +1,24 @@
+<<Sitsanok Young>>
+HW3
+Written Questions
+
+Q1. Do your empirical results support the proposition? Explain why or why not.
+
+My empirical results do support the proposition since the proposition states that
+sink-based heap construction uses fewer than 2N compares and fewer than N exchanges
+to construct a heap from N items. Looking at the following sample results:
+
+N          MaxComp          MaxExch
+16	       26               13
+32	       56               26
+64	      117               56
+128	      239              102
+256	      484              205
+512	      973              398
+
+For example, when N = 16, 2*N = 32,
+	the maximum number of compares found in 100 trials is 26, which is less than 32.
+	the maximum number of exchanges found in 100 trials is 13, which is fewer than 16.
+
+Similarly for the remaining N values, all of the maximum compares and maximum exchanges
+satisfy the proposition. 
